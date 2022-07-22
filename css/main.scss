@@ -1,0 +1,712 @@
+@import 'reset';
+@import 'variables';
+
+
+body {
+  display: block;
+  width: 100%;
+  background-color: $body-bg-color;
+  font-family: 'Merriweather Sans', sans-serif;
+
+  .containers {
+    display: flex;
+    width: 100%;
+
+    .about {
+      width: 25%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 348px;
+        height: 292px;
+        margin-top: 30px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+        img {
+          width: 128px;
+          border-radius: 200px;
+          border: 3px solid rgb(115, 0, 255);
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+
+        h1 {
+          color: $text-color;
+          text-align: center;
+          font-size: 24px;
+        }
+
+        p {
+          color: $text-color;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 29px;
+        }
+      }
+
+      .links {
+        width: 348px;
+        height: 380px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+        margin-top: 30px;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          list-style: none;
+          padding: 40px;
+
+          li {
+            display: flex;
+            align-items: center;
+            color: $text-color;
+            font-weight: 400;
+            font-size: 13px;
+            margin-bottom: 30px;
+
+            span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      .tech {
+        display: flex;
+        flex-direction: column;
+        width: 348px;
+        height: 140px;
+        margin-top: 30px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+        span {
+          color: $text-color;
+          font-weight: 700;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        .techs {
+          ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100px;
+              height: 30px;
+              background-color: $bg-techs;
+              padding: 10px 5px;
+              font-size: 14px;
+              border-radius: 15px;
+              font-weight: 700;
+              color: white;
+            }
+          }
+        }
+      }
+
+      .experiences {
+        display: flex;
+        flex-direction: column;
+        width: 348px;
+        height: 140px;
+        margin-top: 30px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+        span {
+          color: $text-color;
+          font-weight: 700;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          margin-left: 20px;
+
+          li {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .education {
+        display: flex;
+        flex-direction: column;
+        width: 348px;
+        height: 200px;
+        margin-top: 30px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+        .education_h1 {
+          color: $text-color;
+          font-weight: 700;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          margin-left: 20px;
+
+          li {
+            display: block;
+            color: $text-color;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 10px;
+
+            span {
+              display: block;
+              color: $text-color;
+              font-weight: 400;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .invisible {
+        display: flex;
+        flex-direction: column;
+        width: 348px;
+        height: 200px;
+        background-color: $body-bg-color;
+        border-radius: 10px;
+        padding: 16px;
+
+      }
+    }
+
+    .projects {
+      width: 75%;
+      height: 100vh;
+
+      .my_projects {
+        width: 1000px;
+        height: 65px;
+        margin-top: 34px;
+        margin-left: 30px;
+        background-color: $bg-cards;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+        span {
+          color: $text-color;
+          font-weight: 700;
+          font-size: 19px;
+
+          a {
+            text-decoration: none;
+            color: $text-color;
+          }
+        }
+      }
+
+      .list_projects {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+
+        .project_login_gitHub {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 400px;
+          height: 400px;
+          margin-top: 50px;
+          margin-left: 30px;
+          background-color: $bg-cards;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+          span {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+
+          img {
+            width: 380px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
+
+          .descrtion-projects {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+          }
+
+          button {
+            background-color: $bg-techs;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+
+            &:hover {
+              background-color: #41026e;
+              transition: 500ms;
+            }
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 400;
+              padding: 20px;
+            }
+          }
+        }
+
+        .project_login_betzord {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 400px;
+          height: 400px;
+          margin-top: 50px;
+          margin-left: 200px;
+          background-color: $bg-cards;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+          span {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+
+          img {
+            width: 380px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
+
+          .descrtion-projects {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+          }
+
+          button {
+            background-color: $bg-techs;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+
+            &:hover {
+              background-color: #41026e;
+              transition: 500ms;
+            }
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 400;
+              padding: 20px;
+            }
+          }
+        }
+
+        .project_login_lol {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 400px;
+          height: 400px;
+          margin-top: 60px;
+          margin-left: 30px;
+          background-color: $bg-cards;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+          span {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+
+          img {
+            width: 380px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
+
+          .descrtion-projects {
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+          }
+
+          button {
+            background-color: $bg-techs;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+
+            &:hover {
+              background-color: #41026e;
+              transition: 500ms;
+            }
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 400;
+              padding: 20px;
+            }
+          }
+
+        }
+
+        .project_progress {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 400px;
+          height: 400px;
+          margin-top: 60px;
+          margin-left: 200px;
+          background-color: rgba(5, 5, 5, 0.668);
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+
+          &:hover {
+            background-image: url(../img/project-progress.jpg);
+            background-size: cover;
+          }
+
+          span {
+            text-align: center;
+            color: $text-color;
+            font-weight: 700;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    .containers {
+
+      .projects {
+
+        .my_projects {
+          width: 700px;
+        }
+
+        .list_projects {
+          .project_login_betzord {
+            margin-top: 50px;
+            margin-left: 40px;
+
+          }
+
+          .project_progress {
+            margin-top: 50px;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  body {
+    .containers {
+
+      .about {
+        width: 35%;
+
+        .profile {}
+      }
+
+      .projects {
+        width: 65%;
+
+        .my_projects {
+          width: 400px;
+          margin-left: 80px;
+        }
+
+
+        .list_projects {
+
+          .project_login_gitHub {
+            margin-top: 50px;
+            margin-left: 80px;
+          }
+
+          .project_login_betzord {
+            margin-top: 50px;
+            margin-left: 80px;
+          }
+
+          .project_login_lol {
+            margin-top: 50px;
+            margin-left: 80px;
+          }
+
+          .project_progress {
+            margin-top: 50px;
+            margin-left: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1069px) {
+  body {
+    .containers {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about {
+        width: 35%;
+
+        .invisible{
+          visibility: hidden;
+        }
+      }
+
+      .projects {
+        margin-top: 500px;
+        width: 65%;
+
+        .my_projects {
+          width: 348px;
+          margin-top: 50px;
+          margin-left: 0;
+        }
+
+
+        .list_projects {
+          margin: 0 auto;
+          
+
+          .project_login_gitHub {
+            width: 348px;
+            margin-top: 50px;
+            margin-left: 0;
+
+            img {
+              width: 300px;
+            }
+          }
+
+          .project_login_betzord {
+            width: 348px;
+            margin-top: 50px;
+            margin-left: 0;
+
+
+            img {
+              width: 300px;
+            }
+          }
+
+          .project_login_lol {
+            width: 348px;
+            margin-top: 50px;
+            margin-left: 0;
+
+            img {
+              width: 300px;
+            }
+          }
+
+          .project_progress {
+            width: 348px;
+            margin-top: 50px;
+            margin-left: 0;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 502px){
+  body {
+    .containers {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about {
+        width: 35%;
+
+        .invisible{
+          visibility: hidden;
+        }
+      }
+
+      .projects {
+        margin-top: 500px;
+        width: 65%;
+
+        .my_projects {
+          width: 250px;
+          margin-top: 50px;
+          margin-left: 0;
+        }
+
+
+        .list_projects {
+          margin: 0 auto;
+          
+
+          .project_login_gitHub {
+            width: 250px;
+            margin-top: 50px;
+            margin-left: 0;
+
+            img {
+              width: 220px;
+            }
+
+            button{
+              padding: 20px;
+            }
+          }
+
+          .project_login_betzord {
+            width: 250px;
+            margin-top: 50px;
+            margin-left: 0;
+
+
+            img {
+              width: 220px;
+            }
+
+            button{
+              padding: 20px;
+            }
+          }
+
+          .project_login_lol {
+            width: 250px;
+            margin-top: 50px;
+            margin-left: 0;
+
+            img {
+              width: 220px;
+            }
+
+            button{
+              padding: 20px;
+            }
+          }
+
+          .project_progress {
+            width: 250px;
+            margin-top: 50px;
+            margin-left: 0;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px){
+  body {
+    .containers {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about {
+        width: 35%;
+
+        .profile{
+          width: 250px;
+        }
+
+        .links{
+          width: 250px;
+        }
+
+        .tech{
+          width: 250px;
+
+
+          .techs{
+            ul{
+              li{
+                font-size: 10px;
+              }
+            }
+          }
+        }
+
+        .experiences{
+          width: 250px;
+        }
+
+        .education{
+          width: 250px;
+        }
+
+        
+        }
+
+        .projects{
+          .my_projects{
+            margin-top: 100px;
+          }
+        }
+      }
+
+  }
+}
+

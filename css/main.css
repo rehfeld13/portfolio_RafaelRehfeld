@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  width: 100%;
+  background-color: #22212C;
+  font-family: "Merriweather Sans", sans-serif;
+}
+body .containers {
+  display: flex;
+  width: 100%;
+}
+body .containers .about {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .containers .about .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 348px;
+  height: 292px;
+  margin-top: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .about .profile img {
+  width: 128px;
+  border-radius: 200px;
+  border: 3px solid rgb(115, 0, 255);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+body .containers .about .profile h1 {
+  color: #837E9F;
+  text-align: center;
+  font-size: 24px;
+}
+body .containers .about .profile p {
+  color: #837E9F;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 29px;
+}
+body .containers .about .links {
+  width: 348px;
+  height: 380px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+  margin-top: 30px;
+}
+body .containers .about .links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  padding: 40px;
+}
+body .containers .about .links ul li {
+  display: flex;
+  align-items: center;
+  color: #837E9F;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+body .containers .about .links ul li span {
+  margin-left: 10px;
+}
+body .containers .about .tech {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 140px;
+  margin-top: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .about .tech span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+body .containers .about .tech .techs ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+body .containers .about .tech .techs ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #714791;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-radius: 15px;
+  font-weight: 700;
+  color: white;
+}
+body .containers .about .experiences {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 140px;
+  margin-top: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .about .experiences span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+body .containers .about .experiences ul {
+  margin-left: 20px;
+}
+body .containers .about .experiences ul li {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 15px;
+}
+body .containers .about .education {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 200px;
+  margin-top: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .about .education .education_h1 {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+body .containers .about .education ul {
+  margin-left: 20px;
+}
+body .containers .about .education ul li {
+  display: block;
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+body .containers .about .education ul li span {
+  display: block;
+  color: #837E9F;
+  font-weight: 400;
+  font-size: 12px;
+}
+body .containers .about .invisible {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 200px;
+  background-color: #22212C;
+  border-radius: 10px;
+  padding: 16px;
+}
+body .containers .projects {
+  width: 75%;
+  height: 100vh;
+}
+body .containers .projects .my_projects {
+  width: 1000px;
+  height: 65px;
+  margin-top: 34px;
+  margin-left: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .projects .my_projects span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 19px;
+}
+body .containers .projects .my_projects span a {
+  text-decoration: none;
+  color: #837E9F;
+}
+body .containers .projects .list_projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .containers .projects .list_projects .project_login_gitHub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .projects .list_projects .project_login_gitHub span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+body .containers .projects .list_projects .project_login_gitHub img {
+  width: 380px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+body .containers .projects .list_projects .project_login_gitHub .descrtion-projects {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+body .containers .projects .list_projects .project_login_gitHub button {
+  background-color: #714791;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+body .containers .projects .list_projects .project_login_gitHub button:hover {
+  background-color: #41026e;
+  transition: 500ms;
+}
+body .containers .projects .list_projects .project_login_gitHub button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 20px;
+}
+body .containers .projects .list_projects .project_login_betzord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 200px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .projects .list_projects .project_login_betzord span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+body .containers .projects .list_projects .project_login_betzord img {
+  width: 380px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+body .containers .projects .list_projects .project_login_betzord .descrtion-projects {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+body .containers .projects .list_projects .project_login_betzord button {
+  background-color: #714791;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+body .containers .projects .list_projects .project_login_betzord button:hover {
+  background-color: #41026e;
+  transition: 500ms;
+}
+body .containers .projects .list_projects .project_login_betzord button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 20px;
+}
+body .containers .projects .list_projects .project_login_lol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  margin-left: 30px;
+  background-color: #302F3D;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .projects .list_projects .project_login_lol span {
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+body .containers .projects .list_projects .project_login_lol img {
+  width: 380px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+body .containers .projects .list_projects .project_login_lol .descrtion-projects {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+body .containers .projects .list_projects .project_login_lol button {
+  background-color: #714791;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+body .containers .projects .list_projects .project_login_lol button:hover {
+  background-color: #41026e;
+  transition: 500ms;
+}
+body .containers .projects .list_projects .project_login_lol button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 20px;
+}
+body .containers .projects .list_projects .project_progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  margin-left: 200px;
+  background-color: rgba(5, 5, 5, 0.668);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.384);
+}
+body .containers .projects .list_projects .project_progress:hover {
+  background-image: url(../img/project-progress.jpg);
+  background-size: cover;
+}
+body .containers .projects .list_projects .project_progress span {
+  text-align: center;
+  color: #837E9F;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+@media (max-width: 1400px) {
+  body .containers .projects .my_projects {
+    width: 700px;
+  }
+  body .containers .projects .list_projects .project_login_betzord {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  body .containers .projects .list_projects .project_progress {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1380px) {
+  body .containers .about {
+    width: 35%;
+  }
+  body .containers .projects {
+    width: 65%;
+  }
+  body .containers .projects .my_projects {
+    width: 400px;
+    margin-left: 80px;
+  }
+  body .containers .projects .list_projects .project_login_gitHub {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  body .containers .projects .list_projects .project_login_betzord {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  body .containers .projects .list_projects .project_login_lol {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  body .containers .projects .list_projects .project_progress {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+}
+@media (max-width: 1069px) {
+  body .containers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .containers .about {
+    width: 35%;
+  }
+  body .containers .about .invisible {
+    visibility: hidden;
+  }
+  body .containers .projects {
+    margin-top: 500px;
+    width: 65%;
+  }
+  body .containers .projects .my_projects {
+    width: 348px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects {
+    margin: 0 auto;
+  }
+  body .containers .projects .list_projects .project_login_gitHub {
+    width: 348px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_gitHub img {
+    width: 300px;
+  }
+  body .containers .projects .list_projects .project_login_betzord {
+    width: 348px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_betzord img {
+    width: 300px;
+  }
+  body .containers .projects .list_projects .project_login_lol {
+    width: 348px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_lol img {
+    width: 300px;
+  }
+  body .containers .projects .list_projects .project_progress {
+    width: 348px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 502px) {
+  body .containers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .containers .about {
+    width: 35%;
+  }
+  body .containers .about .invisible {
+    visibility: hidden;
+  }
+  body .containers .projects {
+    margin-top: 500px;
+    width: 65%;
+  }
+  body .containers .projects .my_projects {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects {
+    margin: 0 auto;
+  }
+  body .containers .projects .list_projects .project_login_gitHub {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_gitHub img {
+    width: 220px;
+  }
+  body .containers .projects .list_projects .project_login_gitHub button {
+    padding: 20px;
+  }
+  body .containers .projects .list_projects .project_login_betzord {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_betzord img {
+    width: 220px;
+  }
+  body .containers .projects .list_projects .project_login_betzord button {
+    padding: 20px;
+  }
+  body .containers .projects .list_projects .project_login_lol {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  body .containers .projects .list_projects .project_login_lol img {
+    width: 220px;
+  }
+  body .containers .projects .list_projects .project_login_lol button {
+    padding: 20px;
+  }
+  body .containers .projects .list_projects .project_progress {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 370px) {
+  body .containers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .containers .about {
+    width: 35%;
+  }
+  body .containers .about .profile {
+    width: 250px;
+  }
+  body .containers .about .links {
+    width: 250px;
+  }
+  body .containers .about .tech {
+    width: 250px;
+  }
+  body .containers .about .tech .techs ul li {
+    font-size: 10px;
+  }
+  body .containers .about .experiences {
+    width: 250px;
+  }
+  body .containers .about .education {
+    width: 250px;
+  }
+  body .containers .projects .my_projects {
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=main.css.map */
